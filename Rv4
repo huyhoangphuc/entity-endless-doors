@@ -45,7 +45,9 @@ entity.Debug.OnEntitySpawned = function()
 end
 
 entity.Debug.OnEntityDespawned = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoangphuc/entity-endless-doors/main/Rv1"))()
 end
+
 entity.Debug.OnEntityStartMoving = function()
     print("Entity started moving")
 end
