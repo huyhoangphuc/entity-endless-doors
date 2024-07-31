@@ -1,0 +1,26 @@
+local func, setupval, getinfo, typeof, getgc, next = nil, debug.setupvalue or setupvalue, debug.getinfo or getinfo, typeof, getgc, next
+ 
+for i,v in next, getgc(false) do
+    if typeof(v) == "function" then
+        local info = getinfo(v)
+        if info.currentline == 54 and info.nups == 2 and info.is_vararg == 0 then
+            func = v
+            break
+        end
+    end
+end
+ 
+local function DeathHint(hints, type: string)
+    setupval(func, 1, hints)
+    if type ~= nil then
+        setupval(func, 2, type)
+    end
+end
+ 
+DeathHint({
+    "You died to Rebound",
+    "How to survive the rebound is",
+    "rebound it appears at each door, you hear the rebound sound and hide in the closet",
+    "When you find the achievement called Here I'm Come Back, you've survived it",
+}, "Blue") -- "Blue" or "Yellow"
+
