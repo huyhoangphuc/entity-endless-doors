@@ -1,5 +1,8 @@
+if game.ReplicatedStorage.GameData.LatestRoom.Value ~= 50 then 
 game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
-wait()
+else
+Wait(0.1)
+end
 local Sielnce = Instance.new("Sound", workspace)
     Sielnce.SoundId = "rbxassetid://6346446980"
     Sielnce:Play()
