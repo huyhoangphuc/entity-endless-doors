@@ -1,5 +1,23 @@
 if game.ReplicatedStorage.GameData.LatestRoom.Value ~= 50 then 
 game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+wait()
+end
+if (workspace.CurrentRooms:FindFirstChild("26")) then
+wait() 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoangphuc/door/main/not%20spawn%20to%2046"))()
+end
+if (workspace.CurrentRooms:FindFirstChild("47")) then
+wait() 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoangphuc/door/main/not%20spawn%2057"))()
+end
+if (workspace.CurrentRooms:FindFirstChild("74")) then
+wait() 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoangphuc/door/main/not%20spawn%2089"))()
+end
+if (workspace.CurrentRooms:FindFirstChild("89")) then
+wait() 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoangphuc/door/main/not%20spawn%2089"))()
+end
 else
 Wait(0.1)
 end
