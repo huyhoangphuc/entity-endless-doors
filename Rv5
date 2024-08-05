@@ -1,11 +1,3 @@
-if (workspace.CurrentRooms:FindFirstChild("26")) then
-wait() 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoangphuc/door/main/not%20spawn%20to%2046"))()
-end
-if (workspace.CurrentRooms:FindFirstChild("47")) then
-wait() 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoangphuc/door/main/not%20spawn%2057"))()
-end
 if (workspace.CurrentRooms:FindFirstChild("74")) then
 wait() 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoangphuc/door/main/not%20spawn%2089"))()
@@ -14,10 +6,9 @@ if (workspace.CurrentRooms:FindFirstChild("89")) then
 wait() 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoangphuc/door/main/not%20spawn%2089"))()
 end
-else
 Wait(0.1)
 game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
-end
+wait()
 local Sielnce = Instance.new("Sound", workspace)
     Sielnce.SoundId = "rbxassetid://6346446980"
     Sielnce:Play()
