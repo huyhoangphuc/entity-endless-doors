@@ -1,5 +1,7 @@
-if (workspace.CurrentRooms:FindFirstChild("30")) then
+if (workspace.CurrentRooms:FindFirstChild("27")) then
 wait() 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoangphuc/door/main/not%20spawn%20to%2046"))()
+wait(3)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoangphuc/door/main/not%20spawn%20to%2046"))()
 end
 if (workspace.CurrentRooms:FindFirstChild("47")) then
